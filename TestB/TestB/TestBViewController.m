@@ -8,7 +8,7 @@
 
 #import "TestBViewController.h"
 
-//#import <TestA_Category/CTMediator+TestA.h>
+#import <TestA_Category/CTMediator+TestA.h>
 #import <SDWebImage/UIButton+WebCache.h>
 @interface TestBViewController ()
 
@@ -74,13 +74,13 @@
 
 - (void)goBViewController
 {
-//    UIViewController *controller =  [[CTMediator sharedInstance] viewControllerTestA];
-//    [self.navigationController pushViewController:controller animated:YES];
+    UIViewController *controller =  [[CTMediator sharedInstance] viewControllerTestA];
+    [self.navigationController pushViewController:controller animated:YES];
 }
 
 - (void)showA
 {
-//    [[CTMediator sharedInstance] tsetAShowAlert];
+    [[CTMediator sharedInstance] tsetAShowAlert];
 }
 
 - (void)testShow
