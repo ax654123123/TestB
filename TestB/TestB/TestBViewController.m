@@ -8,8 +8,8 @@
 
 #import "TestBViewController.h"
 
-#import <TestA_Category/CTMediator+TestA.h>
-
+//#import <TestA_Category/CTMediator+TestA.h>
+#import <SDWebImage/UIButton+WebCache.h>
 @interface TestBViewController ()
 
 @end
@@ -31,7 +31,7 @@
     [button setTitle:@"返回" forState:UIControlStateNormal];
     [button addTarget:self action:@selector(goBock) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button];
-    
+    [button sd_setImageWithURL:[NSURL URLWithString:@""] forState:UIControlStateNormal];
     
     UIButton *button1 = [UIButton buttonWithType:0];
     button1.backgroundColor = [UIColor blackColor];
@@ -74,13 +74,13 @@
 
 - (void)goBViewController
 {
-    UIViewController *controller =  [[CTMediator sharedInstance] viewControllerTestA];
-    [self.navigationController pushViewController:controller animated:YES];
+//    UIViewController *controller =  [[CTMediator sharedInstance] viewControllerTestA];
+//    [self.navigationController pushViewController:controller animated:YES];
 }
 
 - (void)showA
 {
-    [[CTMediator sharedInstance] tsetAShowAlert];
+//    [[CTMediator sharedInstance] tsetAShowAlert];
 }
 
 - (void)testShow
