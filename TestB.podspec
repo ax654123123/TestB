@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "TestB"
-  s.version      = "9"
+  s.version      = "10"
   s.summary      = "TestB."
 
   # This description is used to generate tags and improve search results.
@@ -138,4 +138,5 @@ Pod::Spec.new do |s|
   # s.dependency "BLMediator"
 s.dependency "TestA_Category"
 s.dependency "SDWebImage"
+s.dependency "BaseComponent"
 end
